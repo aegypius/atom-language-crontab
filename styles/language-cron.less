@@ -1,0 +1,27 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+atom-text-editor::shadow {
+  .source.crontab {
+    .meta {
+      &.minute {
+        color: @ui-site-color-5;
+      }
+      &.hour {
+        color: @ui-site-color-2;
+      }
+      &.dayofmonth {
+        color: @ui-site-color-3;
+      }
+      &.month {
+        color: @ui-site-color-1;
+      }
+      &.dayofweek {
+        color: @ui-site-color-4;
+      }
+    }
+  }
+}
