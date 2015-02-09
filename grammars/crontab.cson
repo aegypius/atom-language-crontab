@@ -23,11 +23,20 @@
         'name': 'string.command.crontab'
   }
   {
+    'match': '^\\s*(@yearly|@annually|@monthly|@weekly|@daily|@hourly|@reboot)\\s+(.*)$'
+    'name': 'statement.crontab'
+    'captures':
+      '1':
+        'name': 'meta.constant.crontab'
+      '2':
+        'name': 'string.command.crontab'
+  }
+  {
     'match': '^#.*$'
     'name': 'comment.crontab'
   }
   {
-    'match': "^\\s*(HOME|SHELL|MAILFROM|MAILTO|CRON_TZ)\\s*(=)\\s*(.*)$"
+    'match': "^\\s*([a-zA-Z0-9_]+)\\s*(=)\\s*(.*)$"
     'name': 'environment.crontab'
     'captures':
       '1':
