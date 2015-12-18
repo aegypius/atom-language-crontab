@@ -23,7 +23,7 @@
         'name': 'string.command.crontab'
   }
   {
-    'match': '^\\s*(@yearly|@annually|@monthly|@weekly|@daily|@hourly|@reboot)\\s+(.*)$'
+    'match': '^\\s*(@reboot|@yearly|@annually|@monthly|@weekly|@daily|@midnight|@hourly)\\s+(.*)$'
     'name': 'statement.crontab'
     'captures':
       '1':
