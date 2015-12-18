@@ -1,6 +1,6 @@
 {
   "name": "language-crontab",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Crontab syntax highlighting",
   "repository": "https://github.com/aegypius/atom-language-crontab",
   "license": "MIT",
