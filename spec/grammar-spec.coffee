@@ -186,3 +186,21 @@ describe "crontab grammar", ->
           "statement.crontab"
           "string.command.crontab"
         ]
+
+    it "parse portion based statement.crontab", ->
+      {tokens} = grammar.tokenizeLine "@yearly echo Happy New Year !"
+      expect(tokens).toHaveLength 3
+      expect(tokens[0]).toEqual
+        value: "@yearly"
+        scopes: [
+          "source.crontab"
+          "statement.crontab"
+          "meta.constant.crontab"
+        ]
+      expect(tokens[2]).toEqual
+        value: "echo Happy New Year !"
+        scopes: [
+          "source.crontab"
+          "statement.crontab"
+          "string.command.crontab"
+        ]
