@@ -5,7 +5,7 @@
   "repository": "https://github.com/aegypius/atom-language-crontab",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.13.0"
   },
   "styles": [
     "styles/language-cron.less"
